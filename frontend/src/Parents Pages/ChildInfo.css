@@ -1,0 +1,260 @@
+.child-info-container {
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.child-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 25px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.05);
+}
+
+.child-photo {
+  width: 150px;
+  height: 150px;
+  margin-right: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: #e3f2fd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 5px solid white;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.child-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.photo-placeholder {
+  color: #1976d2;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.child-basic h1 {
+  margin: 0 0 10px 0;
+  color: #0d47a1;
+  font-size: 2rem;
+}
+
+.child-basic p {
+  margin: 8px 0;
+  color: #555;
+  font-size: 1rem;
+}
+
+.tabs {
+  display: flex;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #e3f2fd;
+}
+
+.tabs button {
+  padding: 12px 25px;
+  margin-right: 10px;
+  background: none;
+  border: none;
+  border-bottom: 3px solid transparent;
+  cursor: pointer;
+  font-size: 16px;
+  color: #555;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  border-radius: 5px 5px 0 0;
+}
+
+.tabs button:hover {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.tabs button.active {
+  border-bottom: 3px solid #1976d2;
+  color: #1976d2;
+  background: #e3f2fd;
+}
+
+.tab-content {
+  background: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
+}
+
+.tab-content h2 {
+  color: #0d47a1;
+  margin-top: 0;
+  margin-bottom: 25px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #eee;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.info-item {
+  margin-bottom: 15px;
+  padding: 15px;
+  background: #f8f9fa;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.info-item:hover {
+  background: #e3f2fd;
+  transform: translateY(-2px);
+}
+
+.info-label {
+  font-weight: 600;
+  color: #1976d2;
+  display: inline-block;
+  width: 150px;
+}
+
+.info-value {
+  color: #333;
+}
+
+.fee-summary {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.fee-summary .info-item {
+  flex: 1;
+  text-align: center;
+  padding: 20px;
+  background: #e3f2fd;
+}
+
+.fee-summary .info-label {
+  display: block;
+  width: auto;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.fee-summary .info-value {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #0d47a1;
+}
+
+.payment-history {
+  margin-top: 30px;
+}
+
+.payment-history h3 {
+  color: #0d47a1;
+  margin-bottom: 20px;
+}
+
+.payment-history table {
+  width: 100%;
+  border-collapse: collapse;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+
+.payment-history th, .payment-history td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #e3f2fd;
+}
+
+.payment-history th {
+  background-color: #1976d2;
+  color: white;
+  font-weight: 500;
+}
+
+.payment-history tr:hover {
+  background-color: #e3f2fd;
+}
+
+.loading, .error, .not-found {
+  text-align: center;
+  padding: 50px;
+  font-size: 18px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 15px rgba(0,0,0,0.05);
+  max-width: 800px;
+  margin: 2rem auto;
+}
+
+.loading {
+  color: #1976d2;
+}
+
+.error {
+  color: #d32f2f;
+  background: #ffeeee;
+}
+
+.not-found {
+  color: #666;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .child-header {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .child-photo {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  
+  .tabs {
+    flex-wrap: wrap;
+  }
+  
+  .tabs button {
+    margin-bottom: 5px;
+  }
+  
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .fee-summary {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .child-info-container {
+    padding: 0 15px;
+  }
+  
+  .tab-content {
+    padding: 20px 15px;
+  }
+  
+  .payment-history th, 
+  .payment-history td {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}

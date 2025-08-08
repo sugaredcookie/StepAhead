@@ -1,0 +1,520 @@
+/* Curriculum Page Styles */
+.curriculum-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+}
+
+.curriculum-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    /* text-decoration: underline; */
+}
+
+.curriculum-header h1 {
+    font-size: 2.5rem;
+    color: #0d47a1;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.back-button {
+    background: #1976d2;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    position: absolute;
+    left: 0;
+}
+
+.back-button:hover {
+    background: #1565c0;
+    transform: translateX(-5px);
+}
+
+/* Hero Section */
+.curriculum-hero {
+    background: linear-gradient(rgba(25, 118, 210, 0.8), rgba(13, 71, 161, 0.8)), 
+                url('https://images.unsplash.com/photo-1604881991720-f91add269bed?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 80px 40px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    color: white;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Approach Section */
+.approach-section {
+    margin-bottom: 60px;
+}
+
+.approach-section h2 {
+    text-align: center;
+    color: #0d47a1;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.approach-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #1976d2;
+}
+
+.approach-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.approach-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+}
+
+.approach-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.approach-icon {
+    font-size: 2.5rem;
+    color: #1976d2;
+    margin-bottom: 20px;
+}
+
+.approach-card h3 {
+    color: #0d47a1;
+    margin-bottom: 15px;
+}
+
+.approach-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Program Sections */
+.program-sections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.program-card {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+.program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.program-icon {
+    background: #e3f2fd;
+    color: #1976d2;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+}
+
+.program-content {
+    padding: 25px;
+    flex: 1;
+}
+
+.program-content h3 {
+    color: #0d47a1;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.program-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.program-content li {
+    padding: 8px 0;
+    position: relative;
+    padding-left: 25px;
+    color: #555;
+}
+
+.program-content li::before {
+    content: '•';
+    color: #1976d2;
+    font-weight: bold;
+    position: absolute;
+    left: 10px;
+}
+
+/* Daily Schedule Styles */
+.daily-schedule {
+    margin: 60px 0;
+    padding: 0 20px;
+}
+
+.daily-schedule h2 {
+    text-align: center;
+    color: #0d47a1;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.daily-schedule h2::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #1976d2;
+}
+
+.schedule-container {
+    position: relative;
+    max-width: 800px;
+    margin: 40px auto 0;
+    padding-left: 100px;
+}
+
+.schedule-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 70px;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(to bottom, #1976d2, #0d47a1);
+}
+
+.schedule-item {
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.schedule-item:last-child {
+    margin-bottom: 0;
+}
+
+.schedule-time {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 150px;
+    text-align: right;
+    padding-right: 15px;
+    font-weight: 600;
+    color: #1976d2;
+    margin-top: 2rem;
+}
+
+.schedule-dot {
+    position: absolute;
+    left: 67px;
+    top: 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #1976d2;
+    border: 3px solid white;
+    box-shadow: 0 0 0 2px #1976d2;
+    z-index: 1;
+    /* margin: 2rem 2rem; */
+}
+
+.schedule-content {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+    margin-left: 90px;
+    transition: all 0.3s ease;
+    width: 60%;
+    text-align: center;
+    margin-left: 8rem;
+    border-left: 3px solid #1976d2;
+}
+
+.time {
+    display: flex;
+}
+
+.schedule-content:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-content h3 {
+    margin: 0 0 8px 0;
+    color: #0d47a1;
+    font-size: 1.1rem;
+}
+
+.schedule-content p {
+    margin: 0;
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .schedule-container {
+        padding-left: 80px;
+    }
+    
+    .schedule-container::before {
+        left: 50px;
+    }
+    
+    .schedule-time {
+        width: 50px;
+        font-size: 0.9rem;
+    }
+    
+    .schedule-dot {
+        left: 47px;
+    }
+    
+    .schedule-content {
+        margin-left: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .schedule-container {
+        padding-left: 70px;
+    }
+    
+    .schedule-container::before {
+        left: 40px;
+    }
+    
+    .schedule-time {
+        width: 40px;
+        font-size: 0.8rem;
+    }
+    
+    .schedule-dot {
+        left: 37px;
+        width: 10px;
+        height: 10px;
+    }
+    
+    .schedule-content {
+        margin-left: 50px;
+        padding: 15px;
+    }
+    
+    .schedule-content h3 {
+        font-size: 1rem;
+    }
+    
+    .schedule-content p {
+        font-size: 0.85rem;
+    }
+}
+
+/* Assessment Section */
+.assessment-section {
+    background: #f5f9fc;
+    padding: 60px 40px;
+    border-radius: 15px;
+    margin-bottom: 60px;
+}
+
+.assessment-section h2 {
+    text-align: center;
+    color: #0d47a1;
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.assessment-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background: #1976d2;
+}
+
+.assessment-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.assessment-content p {
+    text-align: center;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.assessment-content ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0 auto;
+    max-width: 500px;
+}
+
+.assessment-content li {
+    padding: 12px 0 12px 40px;
+    position: relative;
+    color: #555;
+}
+
+.assessment-content li::before {
+    content: '✓';
+    position: absolute;
+    left: 15px;
+    color: #1976d2;
+    font-weight: bold;
+}
+
+/* CTA Section */
+.curriculum-cta {
+    background: linear-gradient(135deg, #1976d2 0%, #0d47a1 100%);
+    padding: 60px 40px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+}
+
+.curriculum-cta h2 {
+    font-size: 1.8rem;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    background: white;
+    color: #1976d2;
+    border: none;
+    padding: 16px 32px;
+    border-radius: 50px;
+    font-weight: 600;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cta-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.curriculum-backBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-content h2 {
+        font-size: 1.8rem;
+    }
+    
+    .hero-content p {
+        font-size: 1rem;
+    }
+    
+    .program-sections {
+        grid-template-columns: 1fr;
+    }
+    
+    .schedule-timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-item {
+        padding-left: 60px;
+    }
+    
+    .timeline-item::before {
+        left: 20px;
+    }
+    
+    .timeline-time {
+        width: 60px;
+    }
+}
+
+@media (max-width: 480px) {
+    .curriculum-header h1 {
+        font-size: 2rem;
+    }
+    
+    .curriculum-hero {
+        padding: 40px 20px;
+    }
+    
+    .approach-cards {
+        grid-template-columns: 1fr;
+    }
+    
+    .program-card {
+        flex-direction: column;
+    }
+    
+    .program-icon {
+        width: 100%;
+        height: 60px;
+    }
+}
