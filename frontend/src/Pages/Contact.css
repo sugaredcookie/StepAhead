@@ -21,7 +21,7 @@
     text-align: center;
 }
 
-.back-button {
+.back-buttons {
     background: #1976d2;
     color: white;
     border: none;
@@ -34,7 +34,7 @@
     left: 0;
 }
 
-.back-button:hover {
+.back-buttons:hover {
     background: #1565c0;
     transform: translateX(-5px);
 }
@@ -179,7 +179,7 @@
         gap: 15px;
     }
     
-    .back-button {
+    .back-buttons {
         position: relative;
         align-self: flex-start;
         margin-bottom: 15px;

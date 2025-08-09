@@ -7,18 +7,14 @@ function Contact() {
     const navigate = useNavigate();
 
     function handleBackButton() {
-        if (isAuthenticated) {
-            navigate('/parentsDashboard');
-        } else {
-            navigate('/');
-        }
+        navigate('/');
     }
 
     return (
         <div className="contact-container">
             {/* Header with back button */}
             <header className="contact-header">
-                <button onClick={handleBackButton} className="back-button">
+                <button onClick={handleBackButton} className="back-buttons">
                     &larr; Back
                 </button>
                 <h1>Contact Us</h1>
