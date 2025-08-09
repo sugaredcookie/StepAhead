@@ -37,7 +37,7 @@ function Admission() {
     setStatus({ message: 'Submitting your application...', type: 'info' });
 
     try {
-      const response = await fetch('http://localhost:5000/api/admissions', {
+      const response = await fetch('https://stepahead-production-8067.up.railway.app/api/admissions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

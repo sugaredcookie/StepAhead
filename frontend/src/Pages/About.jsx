@@ -39,7 +39,7 @@ function About() {
         <div className="about-container">
             {/* Header with back button */}
             <header className="about-header">
-                <button onClick={handleBackButton} className="back-button">
+                <button onClick={handleBackButton} className="back-btns">
                     &larr; Back
                 </button>
                 <h1>About Step Ahead</h1>

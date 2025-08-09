@@ -13,18 +13,14 @@ function Curriculum() {
     }
 
     function handleBackButton() {
-        if (isAuthenticated) {
-            navigate('/parentsDashboard');
-        } else {
-            navigate('/');
-        }
+        navigate('/');
     }
 
     return (
         <div className="curriculum-container">
             {/* Header with back button */}
             <header className="curriculum-header">
-                <button onClick={handleBackButton} className="back-button">
+                <button onClick={handleBackButton} className="back-btn">
                     &larr; Back
                 </button>
                 <h1>Our Curriculum</h1>

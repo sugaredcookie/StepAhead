@@ -12,6 +12,7 @@
     align-items: center;
     margin-bottom: 30px;
     position: relative;
+    justify-content: center;
     /* text-decoration: underline; */
 }
 
@@ -22,7 +23,7 @@
     text-align: center;
 }
 
-.back-button {
+.back-btn {
     background: #1976d2;
     color: white;
     border: none;
@@ -35,7 +36,7 @@
     left: 0;
 }
 
-.back-button:hover {
+.back-btn:hover {
     background: #1565c0;
     transform: translateX(-5px);
 }
