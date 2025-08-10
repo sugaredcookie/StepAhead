@@ -2,7 +2,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import './Dashboard.css';
 import logo from '../assets/logo.png';
-import { FaUserGraduate, FaChalkboardTeacher, FaCalendarAlt, FaImages, FaBookOpen, FaBell, FaInfoCircle, FaEnvelope, FaHome } from 'react-icons/fa';
+import { FaUserGraduate, FaChalkboardTeacher, FaCalendarAlt, FaImages, FaBookOpen, FaBell, FaInfoCircle, FaEnvelope, FaHome,FaFacebook, FaInstagram, FaYoutube } from 'react-icons/fa';
 
 function Dashboard() {
   const navigate = useNavigate();
@@ -198,26 +198,36 @@ function Dashboard() {
           <div className="footerColumn">
             <h4>Quick Links</h4>
             <ul>
-              <li>Admission Process</li>
-              <li>School Calendar</li>
-              <li>Parent Resources</li>
-              <li>Photo Gallery</li>
+              <li onClick={redirectToAdmission}>Admission Process</li>
+              <li onClick={redirectToCalendar}>School Calendar</li>
+              {/* <li>Parent Resources</li> */}
+              <li onClick={redirectToGallery}>Photo Gallery</li>
             </ul>
           </div>
           <div className="footerColumn">
             <h4>Contact Us</h4>
-            <p>Shop No. 8, Step Ahead Pre School, Royal Meadows, Arihant Arham <br /> Panvel, Koproli, Maharashtra 410206</p>
+            <p>Shop No. 6 & 8, Step Ahead Pre School, Royal Meadows, Arihant Arham <br /> Panvel, Koproli, Maharashtra 410206</p>
             <p>Phone: +91-7666453824</p>
             <p>Email: stepaheadpanvel@gmail.com</p>
           </div>
-          <div className="footerColumn">
-            <h4>Follow Us</h4>
-            <div className="socialIcons">
-              <div className="socialIcon fb"></div>
-              <div className="socialIcon insta"></div>
-              <div className="socialIcon youtube"></div>
-            </div>
+          <div className="socialIcons">
+            <a href="https://www.facebook.com/profile.php?id=61560304813958" 
+              target="_blank" rel="noopener noreferrer" 
+              className="facebook">
+                <FaFacebook />
+            </a>
+            <a href="https://www.instagram.com/step_ahead_pre_school_panvel/" 
+              target="_blank" rel="noopener noreferrer" 
+              className="instagram">
+                <FaInstagram />
+            </a>
+            <a href="https://www.youtube.com/@stepaheadpanvel" 
+              target="_blank" rel="noopener noreferrer" 
+              className="youtube">
+                <FaYoutube />
+            </a>
           </div>
+
         </div>
         <div className="footerBottom">
           <p>&copy; {new Date().getFullYear()} Step Ahead Pre-Primary School Panvel. All rights reserved.</p>

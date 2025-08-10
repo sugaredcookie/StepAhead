@@ -769,26 +769,44 @@ body {
   transform: translateY(-3px);
 }
 
-.fb {
-  background-image: url('https://cdn-icons-png.flaticon.com/512/124/124010.png');
-  background-size: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
+.socialIcons a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.3s;
 }
 
-.insta {
-  background-image: url('https://cdn-icons-png.flaticon.com/512/2111/2111463.png');
-  background-size: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
+.socialIcons a:hover {
+  transform: translateY(-3px);
 }
 
-.youtube {
-  background-image: url('https://cdn-icons-png.flaticon.com/512/1384/1384060.png');
-  background-size: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
+/* Facebook */
+.socialIcons a.facebook {
+  background-color: #1877f2;
+  color: white;
 }
+.socialIcons a.facebook:hover {
+  background-color: #145dbf;
+}
+
+/* Instagram */
+.socialIcons a.instagram {
+  background: linear-gradient(45deg, #f58529, #dd2a7b, #8134af, #515bd4);
+  color: white;
+}
+
+/* YouTube */
+.socialIcons a.youtube {
+  background-color: #ff0000;
+  color: white;
+}
+.socialIcons a.youtube:hover {
+  background-color: #cc0000;
+}
+
 
 .newsletter {
   margin-top: 30px;
