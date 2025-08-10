@@ -30,7 +30,7 @@ function Contact() {
                             <FaMapMarkerAlt className="info-icon" />
                             <div>
                                 <h3>Address</h3>
-                                <p>Shop No. 8, Step Ahead Pre School, Royal Meadows, Arihant Arham, Panvel, Koproli, Maharashtra 410206</p>
+                                <p>Shop No. 6 & 8, Step Ahead Pre School, Royal Meadows, Koproli, Panvel, Maharashtra 410206</p>
                             </div>
                         </div>
                         <div className="info-item">

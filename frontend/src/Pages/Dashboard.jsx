@@ -206,7 +206,7 @@ function Dashboard() {
           </div>
           <div className="footerColumn">
             <h4>Contact Us</h4>
-            <p>Shop No. 6 & 8, Step Ahead Pre School, Royal Meadows, Arihant Arham <br /> Panvel, Koproli, Maharashtra 410206</p>
+            <p>Shop No. 6 & 8, Step Ahead Pre School, Royal Meadows, Koproli, <br /> Panvel, Maharashtra 410206</p>
             <p>Phone: +91-7666453824</p>
             <p>Email: stepaheadpanvel@gmail.com</p>
           </div>
