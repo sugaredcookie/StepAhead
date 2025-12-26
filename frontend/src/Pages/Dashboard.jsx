@@ -149,27 +149,27 @@ function Dashboard() {
         <div className="teacherGrid">
           <div className="teacherCard">
             <div className="teacherAvatar t1"></div>
-            <h4>Ms. Reema</h4>
-            <p>Class Teacher</p>
-            <div className="teacherBio">10 years experience in early childhood education with Montessori certification</div>
+            <h4>Ms. Arti Chauhan</h4>
+            <p>Admin</p>
+            <div className="teacherBio">4+ years experience in early childhood education with Montessori certification</div>
           </div>
           <div className="teacherCard">
             <div className="teacherAvatar t2"></div>
-            <h4>Mr. Raj</h4>
-            <p>Music Teacher</p>
-            <div className="teacherBio">Professional musician specializing in child development through music</div>
+            <h4>Ms. Megha Bohot</h4>
+            <p>Mother Teacher</p>
+            <div className="teacherBio">4+ years experience in early childhood education with Montessori certification</div>
           </div>
           <div className="teacherCard">
             <div className="teacherAvatar t3"></div>
-            <h4>Ms. Anita</h4>
-            <p>Art & Craft</p>
-            <div className="teacherBio">Art therapist helping children express themselves creatively</div>
+            <h4>Ms. Priyanka Thakare</h4>
+            <p>Mother Teacher</p>
+            <div className="teacherBio">2+ years experience in early childhood education with Montessori certification</div>
           </div>
           <div className="teacherCard">
             <div className="teacherAvatar t4"></div>
-            <h4>Ms. Priya</h4>
-            <p>Physical Education</p>
-            <div className="teacherBio">Specialized in motor skill development through play activities</div>
+            <h4>Ms. Nida Ilyas Kotwalkar</h4>
+            <p>Mother Teacher</p>
+            <div className="teacherBio">Specialized in skill development through play activities</div>
           </div>
         </div>
       </section>

@@ -60,7 +60,7 @@ function About() {
                         <h2>Our Story</h2>
                         <p>Step Ahead Pre-School, founded on 6th March 2021 by Mrs. Rita Sahay under the Aryabhatta Trust(which also runs the esteemed Aryabhatta Niketan School, est. 1986), is a values-driven early learning center in Panvel.
 
-                        Powered by Kreedo and aligned with CBSE, ICSE, and IGCSE boards, the school offers classes from Pre-Nursery to Senior KG, focusing on holistic development through storytelling, yoga, music, art, and play-based activities.
+                        Powered by Kreedo and follow CBSE, ICSE, and IGCSE curriculum, the school offers classes from Pre-Nursery to Senior KG, focusing on holistic development through storytelling, yoga, music, art, and play-based activities with scientific materials.
 
                         With a nurturing environment, dedicated educators, and strong community support, Step Ahead empowers children to become confident, kind, and independent thinkers—laying a joyful foundation for lifelong learning.</p>
                     </div>
